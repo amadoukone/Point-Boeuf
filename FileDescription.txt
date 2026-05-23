@@ -1,0 +1,32 @@
+📂 Structure du Répertoire :
+├── dist/            ⭐ Ceci est la version de production (recommandée pour une utilisation directe)
+│   ├── index.html   → Ouvrez ce fichier dans un navigateur pour prévisualiser le site web
+│   ├── assets/      → CSS, JS et autres fichiers de ressources groupés
+│   └── ...
+├── src/             📝 Répertoire du code source (pour le développement et la modification)
+│   ├── components/  → Composants React
+│   ├── App.jsx      → Composant principal de l'application
+│   ├── index.js     → Fichier d'entrée
+│   └── ...
+├── package.json     📦 Configuration des dépendances du projet
+├── README.md        📖 Documentation du projet
+└── ...
+
+🚀 Démarrage Rapide (Deux Options) :
+Option 1 : Utilisation Directe (Recommandée pour les Débutants)
+1. Accédez au répertoire dist/
+2. Double-cliquez sur le fichier index.html
+3. Le site web s'ouvrira dans votre navigateur !
+
+Option 2 : Mode Développement (Pour les Utilisateurs avec Expérience en Codage)
+1. Assurez-vous que Node.js est installé (version recommandée : 16+)
+2. Ouvrez le terminal/la ligne de commande dans le répertoire racine du projet
+3. Exécutez : npm install
+4. Exécutez : npm start
+5. Le serveur de développement s'ouvrira automatiquement dans votre navigateur
+
+💡 Conseils :
+- Le répertoire dist/ contient la version optimisée et peut être déployé directement sur un serveur
+- Le fichier index.html à la racine n'est pas la version finale — utilisez toujours celui à l'intérieur de dist/
+- Pour modifier le code, éditez les fichiers à l'intérieur de src/ et reconstruisez le projet
+- Le projet utilise TypeScript et le stack technologique Tailwind CSS

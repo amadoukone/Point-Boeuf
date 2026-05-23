@@ -1,0 +1,86 @@
+🚀 Guide de Déploiement de Site Web
+===========================
+
+📋 Préparation :
+Assurez-vous d'avoir déjà le répertoire dist/ — cela contient la version finale de votre site web
+
+💡 Déployer sur des Plates-formes Cloud (Recommandé) :
+
+🌟 Vercel (vercel.com) – Le Plus Simple
+1. Allez sur vercel.com et inscrivez-vous
+2. Cliquez sur "New Project"
+3. Sélectionnez "Browse All Templates" → "Static"
+4. Glissez-déposez le dossier dist/ dans la zone de téléchargement
+5. Entrez un nom de projet, cliquez sur "Deploy"
+6. Obtenez une URL HTTPS gratuite en quelques minutes !
+
+☁️ Cloudflare Pages (pages.cloudflare.com) – Le Plus Rapide
+1. Allez sur pages.cloudflare.com et connectez-vous
+2. Cliquez sur "Create a project" → "Upload assets"
+3. Compressez le dossier dist/
+4. Téléchargez le fichier zip
+5. Définissez un nom de projet, cliquez sur "Deploy site"
+6. Profitez de l'accélération CDN mondiale !
+
+🔥 Netlify (netlify.com) – Convivial
+1. Allez sur netlify.com et inscrivez-vous
+2. Glissez-déposez le dossier dist/ dans la zone de téléchargement de la page d'accueil
+3. Attendez que le téléchargement soit terminé
+4. Vous obtiendrez un domaine aléatoire (peut être personnalisé dans les paramètres)
+
+📘 GitHub Pages (pages.github.com) – Gratuit & Fiable
+1. Créez un nouveau dépôt sur GitHub
+2. Téléchargez le contenu du dossier dist/ dans le dépôt
+3. Allez dans les Paramètres du dépôt → Pages
+4. Sélectionnez "Deploy from a branch" → branche principale
+5. Accédez à votre site sur username.github.io/nom-du-dépôt
+
+---
+
+🔧 Déploiement Avancé (Pour Développeurs) :
+
+Déploiement Automatique Basé sur Git
+1. Poussez l'ensemble du projet (y compris le code source) sur GitHub/GitLab
+2. Connectez votre dépôt avec Vercel/Netlify
+3. Configurez les paramètres de build :
+   - Commande de build : npm run build
+   - Répertoire de publication : dist
+   - Version de Node.js : 16.x ou supérieure
+4. Chaque push déclenchera automatiquement le build et le déploiement
+
+Déploiement sur Serveur Traditionnel
+Si vous avez votre propre serveur :
+1. Téléchargez tous les fichiers à l'intérieur du répertoire dist/ dans la racine web de votre serveur
+2. Assurez-vous que le serveur prend en charge l'hébergement de fichiers statiques
+3. Accédez à votre site web via votre domaine
+
+---
+
+💰 Informations sur les Tarifs :
+- Vercel : Le plan gratuit est suffisant pour un usage personnel
+- Cloudflare Pages : Complètement gratuit, sans limites
+- Netlify : Le plan gratuit inclut 100GB de bande passante/mois
+- GitHub Pages : Complètement gratuit, 100GB de bande passante/mois
+
+---
+
+🎯 Recommandations :
+- Débutants : Vercel ou Netlify (téléchargement par glisser-déposer)
+- Axé sur la Vitesse : Cloudflare Pages
+- Projets à Long Terme : GitHub Pages
+- Développeurs : Déploiement Automatique Basé sur Git
+
+---
+
+⚡ Conseils :
+- Toutes les plates-formes fournissent des certificats HTTPS gratuits
+- Vous pouvez lier des domaines personnalisés (certains nécessitent des plans payants)
+- Après le déploiement, testez votre site web sur différents appareils
+
+---
+
+🆘 Dépannage :
+1. Assurez-vous de télécharger le contenu de dist/, pas l'ensemble du projet
+2. Vérifiez que index.html est dans le répertoire racine
+3. Consultez les journaux d'erreurs sur la plate-forme d'hébergement
+4. Assurez-vous que tous les fichiers ont été correctement téléchargés

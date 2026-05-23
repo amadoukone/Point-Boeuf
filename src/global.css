@@ -1,0 +1,60 @@
+/**
+ * File: src/global.css
+ * Purpose: Global styles to improve layout stability, including preventing
+ *          any unintended horizontal scrolling on the entire page and
+ *          providing shared animations for the Baqara gallery.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  /* On bloque uniquement le scroll horizontal, pas le vertical */
+  overflow-x: hidden;
+}
+
+/**
+ * Baqara auto-scroll gallery
+ * Pure CSS marquee-like animation so that the gallery does not interfere
+ * with the page vertical scroll.
+ */
+
+.baqara-gallery {
+  position: relative;
+}
+
+/* Track animé horizontalement.
+ * Aucun overflow scrollable ici, donc la molette continue de contrôler la page.
+ */
+.baqara-gallery-track {
+  display: flex;
+  height: 100%;
+  animation-name: baqara-marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 30s; /* default, can be overridden inline */
+  will-change: transform;
+}
+
+/* Pause the animation on hover for better readability */
+.baqara-gallery:hover .baqara-gallery-track {
+  animation-play-state: paused;
+}
+
+/* Keyframes: shift by 50% because the track contains two sequences back to back */
+@keyframes baqara-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
