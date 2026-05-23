@@ -15,9 +15,9 @@ import { MapPin } from "lucide-react";
  */
 export default function Locations(): JSX.Element {
   const places = [
-    { name: "Baqara — Site principal", address: "Zone agro-industrielle, Ville" },
-    { name: "Point de vente Marché Central", address: "Marché central, pavillon viande" },
-    { name: "Point de collecte Nord", address: "Route nationale, sortie Nord" },
+    { name: "Baqara — Site principal", address: "Adresse, Ville" },
+    { name: "Point de vente 1", address: "Bacodjicoroni ACI,Bamako" },
+    { name: "Point de vente 2", address: "Adresse, ville" },
   ];
 
   return (
